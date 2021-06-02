@@ -144,6 +144,7 @@ body {
     rgba(47, 48, 58, 0.4)
   ),
   url(../img/hero/img-bg-hero.jpg);
+  background-color: #C4C4C4;
   background-repeat: no-repeat;
   background-position: center;
   /* background-size: cover; */
@@ -251,6 +252,7 @@ body {
 
 .about-img {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -295,7 +297,6 @@ body {
 .teammate-about {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 24px;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -318,7 +319,79 @@ body {
   color: var(--grey-color);
 }
 
+/* ===================SOCIAL============== */
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--accent-color);
+}
+
+.social-item:hover .social-list-icon,
+.social-item:focus .social-list-icon {
+  fill: #ffffff;
+}
+
+/* ===================END SOCIAL=========== */
+
 /* ===================END TEAM============== */
+
+
+/* ===================CLIENTS============== */
+
+.clients {
+  min-width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.title-clients {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-list {
+  display: flex;
+  font-weight: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.clients-item {
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  flex-basis: calc((100% - 180px) / 6);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+
+
+/* ===================END CLIENTS========== */
+
 
 /* ===================PARTFOLIO============= */
 
@@ -372,18 +445,14 @@ body {
 .services-img-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -24px;
-  margin-top: -24px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .services-img-item {
-  flex-basis: calc((100% - 72px) / 3);
-  margin-left: 24px;
-  margin-top: 24px;
-}
-
-.services-img-item:not(lastchild) {
-    margin-right: 30px
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .services-img-item:hover {
