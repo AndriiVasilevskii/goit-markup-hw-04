@@ -127,6 +127,24 @@ body {
 .tel-link:focus {
   color: var(--accent-color);
 }
+
+.mail-svg {
+  margin-right: 10px;
+  fill: tomato;
+}
+
+.tel-svg {
+  margin-right: 10px;
+}
+
+
+/* .contacts-list-link:hover .address-link-email-icon,
+.contacts-list-link:focus .address-link-email-icon,
+.contacts-list-link:hover .address-link-tel-icon,
+.contacts-list-link:focus .address-link-tel-icon {
+  fill: var(--accent-color); */
+
+
 /* ================END HEADER=============== */
 
 /* ================MAIN===================== */
@@ -324,24 +342,35 @@ body {
 .social-list {
   display: flex;
   justify-content: space-between;
-  padding-top: 16px;
+  align-items: center;
   padding-left: 32px;
   padding-right: 32px;
+  padding-bottom: 16px;
 }
 
-.social-item {
-  display: flex;
+/* component */
+.social-list-icon {
+  fill: tomato;
+}
+
+.social-list-link {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
+  background-color: transparent;
   border-radius: 50%;
 }
 
-.social-list-icon {
-  width: 20px;
-  height: 20px; 
-  fill: currentColor;
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--white-color);
 }
 
 
