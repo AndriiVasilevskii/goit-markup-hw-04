@@ -340,18 +340,10 @@ body {
 
 .social-list-icon {
   width: 20px;
-  height: 20px;
+  height: 20px; 
+  fill: currentColor;
 }
 
-.social-item:hover,
-.social-item:focus {
-  background-color: var(--accent-color);
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--white-color);
-}
 
 /* ===================END SOCIAL=========== */
 
