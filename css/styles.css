@@ -348,9 +348,9 @@ body {
   background-color: var(--accent-color);
 }
 
-.social-item:hover .social-list-icon,
-.social-item:focus .social-list-icon {
-  fill: #ffffff;
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--white-color);
 }
 
 /* ===================END SOCIAL=========== */
